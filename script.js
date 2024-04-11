@@ -2,11 +2,10 @@ function stringChop(str, size) {
   // your code here
 	let x = 0
 	let arr = []
-	arr.pop(str.slice(x,x+size))
-	x = x +size
-	if(x>str.length){
-		break
+	for(let i = 0; i<str.length; i=i+size){
+		arr.push(str.slice(i,i+size))
 	}
+	return arr
 }
 
 // Do not change the code below
